@@ -22,3 +22,4 @@ Auth::routes();
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/pages', function () {return view('admin.pages.index');})->name('admin.pages.index');
+Route::get('/pages/create', function () {return view('admin.pages.create');})->name('admin.pages.create');
